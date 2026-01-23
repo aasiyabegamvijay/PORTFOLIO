@@ -159,6 +159,125 @@ body {
   }
 }
 
+.github-projects {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 0;
+}
+
+.github-projects h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+.github-project-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.project-image {
+  flex: 1 1 300px;
+  max-width: 400px;
+  overflow: hidden;
+}
+
+
+.project-image-wrapper {
+  background: linear-gradient(135deg, #0b132b, #1c2541);
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+.project-tag {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.project-image img {
+  width: 100%;
+  max-width: 420px;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.project-details {
+  flex: 2 1 400px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.project-details h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.project-details p {
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+  color: #333;
+}
+
+.project-links {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-start;
+}
+
+.project-links a {
+  text-decoration: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.project-links a:hover {
+  transform: translateY(-2px);
+}
+
+.project-links a.live-btn {
+  background-color: #f59e0b;
+  color: black;
+}
+
+.project-links a:not(.live-btn) {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .github-project-card {
+    flex-direction: column;
+  }
+
+  .project-details {
+    padding: 1rem;
+  }
+
+  .project-links {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
 .projects {
   padding: 80px 10%;
   background: #0f172a;
@@ -429,3 +548,8 @@ body {
   color: #cbd5f5;
   font-size: 15px;
 }
+.btns{
+  margin-top: 60px;
+  
+}
+
