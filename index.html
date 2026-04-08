@@ -52,15 +52,14 @@
   <div class="about-content">
     <h2>About Me</h2>
     <p>
-      Dedicated MERN Stack Developer Fresher with hands-on experience in building responsive and scalable web applications, contributing to end-to-end development. Focused on clean, maintainable code, user experience, collaboration, and continuous learning, with a strong interest in adapting to new technologies and delivering reliable solutions effectively consistently.
-
+MERN Stack Developer with hands-on experience in building and deploying full-stack web applications using React.js, Node.js, Express.js, and MongoDB. Experienced in developing RESTful APIs, implementing secure authentication and authorization, and performing efficient CRUD operations. Strong proficiency in JavaScript (ES6+), HTML5, CSS3, and responsive web design principles. Hands-on experience with Git/GitHub for version control and collaborative development. Detail-oriented professional with strong problem-solving skills and the ability to work effectively in team-based environments.
     </p>
 
     <div class="info">
-      <p><strong>Location:</strong> Madurai</p>
-      <p><strong>Email:</strong> aasiiyabegamvijay@gmail.com</p>
-      <p><strong>Phone:</strong> +91 8838674764</p>
-      <p><strong>Languages:</strong> Tamil, English</p>
+      <p><strong style="font-size: large;">Location:</strong> Madurai</p>
+      <p><strong style="font-size: large;">Email:</strong> aasiiyabegamvijay@gmail.com</p>
+      <p><strong style="font-size: large;">Phone:</strong> +91 8838674764</p>
+      <p><strong style="font-size: large;">Languages:</strong> Tamil, English</p>
     </div>
   </div>
 </section>
@@ -178,29 +177,53 @@
 </section>
 
 <section class="internship">
-  <h2>Internship</h2>
+  <h2>Internship Experience</h2>
 
+  <!-- Card 1 -->
   <div class="intern-card">
     <h3>Web Development Intern</h3>
-    <p><strong>UNO Tech Software Solutions, Madurai</strong></p>
-    <p><strong>Duration : </strong>One Month</p>
+    <span>UNO Tech Software Solutions, Madurai</span>
+    <p class="duration">Duration: One Month</p>
     <p>
-      Completed a web development internship focusing on building
-      responsive websites using HTML and CSS.
-      Gained hands-on experience in UI design and real-world projects.
+      Completed a web development internship focusing on building responsive
+      websites using HTML and CSS. Gained hands-on experience in UI design and real-world projects.
     </p>
   </div>
-   <div class="intern-card">
-    <h3>Full Stack Intern</h3>
-    <p><strong>ScopeTech Software Solutions, Madurai</strong></p>
-        <p><strong>Duration : </strong>Two Months</p>
 
+  <!-- Card 2 -->
+  <div class="intern-card">
+    <h3>Full Stack Intern</h3>
+    <span>ScopeTech Software Solutions, Madurai</span>
+    <p class="duration">Duration: Two Months</p>
     <p>
-      Full Stack Web Development Intern with practical experience in MERN stack technologies, responsive UI development, backend API integration, and database management through hands-on project work.
+      Worked with MERN stack technologies, including frontend UI development,
+      backend API integration, and database management through real-time projects.
     </p>
+  </div>
+
+  <!-- Card 3 -->
+  <div class="intern-card">
+    <h3>Web Developer (Real-Time Projects)</h3>
+    <span>V7 Lancers Technopark Pvt. Ltd., Madurai</span>
+    <p class="duration">Duration: Present</p>
+
+    <div class="project-sub">
+      <h4>Projects During Internship</h4>
+
+      <p><strong>Healthcare Hospital Website – Trichy</strong></p>
+      <ul>
+        <li>Developed a responsive website using React.js</li>
+        <li>Built reusable components for performance</li>
+      </ul>
+
+      <p><strong>SNS Valley View Resort – Kodaikanal</strong></p>
+      <ul>
+        <li>Built using HTML, CSS, JavaScript, Bootstrap</li>
+        <li>Improved UI with clean layouts and responsiveness</li>
+      </ul>
+    </div>
   </div>
 </section>
-
 <!-- PROJECTS -->
 <section class="projects">
   <h2>Projects</h2>
@@ -316,21 +339,24 @@
 
 
 </div>
-
-
 </section>
 
-<section class="contact" id="contact">
-  <h2>Contact Me</h2>
+<section>
+<form action="https://formspree.io/f/xqegjbel" method="POST" class="contact-form" id="contact-form">
+    <h2>Get In Touch</h2>
 
-  <form class="contact-form">
-    <input type="text" placeholder="Your Name" required>
-    <input type="email" placeholder="Your Email" required>
-    <textarea rows="5" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <input type="text" name="name" placeholder="Your Name" required>
+
+  <input type="email" name="email" placeholder="Your Email" required>
+
+  <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+  <button type="submit" id="submit-btn">Send Message</button>
+
+</form>
+
+<p id="success-msg" style="display:none; color: #22c55e; margin-top: 10px;">Message sent successfully!</p>
 </section>
-
 
 <!-- FOOTER -->
 <footer class="footer">
@@ -341,6 +367,8 @@
     <a href="aasiyabegamvijay@gmail.com" target="_blank">Email</a>
   </p>
 </footer>
-
+<script src="./Form.js"></script>
+</body>
+</html>
 </body>
 </html>
